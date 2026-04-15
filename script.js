@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   function pageLoaderAnimation() {
     const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.inOut" } });
+    gsap.set("body", { overflow: "hidden" });
 
     tl.to(pageLoader, { autoAlpha: 1 })
       .to(pageLoader, { autoAlpha: 0 });
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .to(van, { right: "0%", bottom: "50%", duration: 1.5, scale: 1 })
       .to(vanTyres, { rotation: "-=360", repeat: 4.25, ease: "none" }, 0)
       .to(van, {scale: 5, transformOrigin: "76% 22.5%", ease: "power2.in"}, "+=0.5")
-      .to(introSection, { autoAlpha: 0 });
+      .to(introSection, { autoAlpha: 0 })
+      .to("body", { overflow: "" });
 
     return tl;
   }
