@@ -63,34 +63,6 @@ body {
   width: 100%;
 }
 
-.page-loader_logo-ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  height: 75%;
-  width: 75%;
-  border: 2rem solid #f71a8f;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.page-loader_logo-ring.is-1 {
-  filter: blur(10px);
-  animation: loaderLogoGlow 1s ease infinite alternate;
-}
-
-.page-loader_logo-ring.is-2,
-.page-loader_logo-ring.is-3 {
-  height: 70%;
-  width: 70%;
-  border: 0.25rem solid white;
-}
-
-.page-loader_logo-ring.is-2 {
-  filter: blur(5px);
-}
-
 .section-intro {
   position: fixed;
   inset: 0;
@@ -139,15 +111,4 @@ body {
  width: 100%;
  max-width: 80rem;
  margin: 0 auto;
-}
-
-@keyframes loaderLogoGlow {
-  0% {
-    opacity: 0.5;
-    filter: blur(5px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(15px);
-  }
 }

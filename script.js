@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const vanTyres = van.querySelectorAll(".van_tyres");
 
   function pageLoaderAnimation() {
-    const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.inOut" } });
+    const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.inOut" } });
     gsap.set("body", { overflow: "hidden" });
+    gsap.set(pageLoader, { autoAlpha: 1 });
 
-    tl.to(pageLoader, { duration: 1, autoAlpha: 1 })
-      .to(pageLoader, { autoAlpha: 0 });
+    tl.to(pageLoader, { autoAlpha: 0 });
 
     return tl;
   }

@@ -276,7 +276,7 @@
       <stop offset="0" stop-color="#ccc"/>
       <stop offset="1" stop-color="#8a8a8a"/>
     </linearGradient>
-    <image id="b" width="1536px" height="512px" href="sip-dirty-van-graphics-side-right.jpg"/>
+    <image id="b" width="1536px" height="512px" href="sip-dirty-van-graphics-side-left.jpg"/>
     <image id="e" width="1024px" height="1536px" href="sip-dirty-menu.jpg"/>
   </defs>
 </svg>
