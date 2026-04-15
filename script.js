@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const tl = gsap.timeline({ defaults: { duration: 0.5, ease: "power2.inOut" } });
     gsap.set("body", { overflow: "hidden" });
 
-    tl.to(pageLoader, { autoAlpha: 1 })
+    tl.to(pageLoader, { duration: 1, autoAlpha: 1 })
       .to(pageLoader, { autoAlpha: 0 });
 
     return tl;
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .to(van, { right: "-100%", bottom: "40%", duration: 1.5, scale: 0.5 })
       .to(van, { rotationY: 0, duration: 0 })
       .to(van, { right: "0%", bottom: "50%", duration: 1.5, scale: 1 })
-      .to(vanTyres, { rotation: "-=360", repeat: 4.25, ease: "none" }, 0)
+      .to(vanTyres, { rotation: "-=360", repeat: 2.75, ease: "none" }, 0)
       .to(van, {scale: 5, transformOrigin: "76% 22.5%", ease: "power2.in"}, "+=0.5")
       .to(introSection, { autoAlpha: 0 })
       .to("body", { overflow: "" });
