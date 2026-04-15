@@ -46,6 +46,7 @@ body {
   overflow: hidden;
   z-index: 9999;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
@@ -54,6 +55,12 @@ body {
 
 .page-loader_logo-wrap {
   position: relative;
+  width: 32rem;
+  max-width: 90%;
+}
+
+.page-loader_logo {
+  width: 100%;
 }
 
 .page-loader_logo-ring {
