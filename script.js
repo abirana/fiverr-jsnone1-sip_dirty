@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const introSection = document.querySelector(".section-intro");
   const van = document.getElementById("sipdirtyVan");
   const vanTyres = van.querySelectorAll(".van_tyres");
+  const vanMenu = van.querySelectorAll(".van_menu");
 
   function pageLoaderAnimation() {
     const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.inOut" } });
